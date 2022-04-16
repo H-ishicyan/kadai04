@@ -1,0 +1,46 @@
+/* style.css */
+body {
+    font-family: New Gulim, 'Times New Roman', Times, serif;
+    background: #b4afab;
+}
+
+.container {
+    max-width: 400px;
+}
+
+input[type=text],
+input[type=text]:focus {
+    color: #9abca4;
+    border: none;
+    background: rgba(202, 199, 33, 0.397);
+    max-width: 400px;
+}
+
+.search {
+    position: relative;
+}
+
+.search-icon {
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* 追加 */
+.todos li {
+    background: #0b071b;
+}
+
+/* 追加 */
+.delete {
+    cursor: pointer;
+    color: rgb(30, 255, 0);
+}
+
+/* 見かけ上削除。実際には消してない */
+.filtered {
+    display : none !important;
+
+.p {
+    senter}
+}

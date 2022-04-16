@@ -1,0 +1,65 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome https://fontawesome.com/start -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+    <style type="text/css">
+        <!--
+       
+       body
+           {
+            margin:0px;          /* ページ全体のmargin */
+            padding:0px;         /* ページ全体のpadding */
+            text-align:center;   /* 下記のautoに未対応用のセンタリング */
+           }
+       
+       #main
+           {
+            margin-left:auto;    /* 左側マージンを自動的に空ける */
+            margin-right:auto;   /* 右側マージンを自動的に空ける */
+            text-align:left;     /* 中身を左側表示に戻す */
+            width:650px;         /* 幅を決定する */
+           }
+       
+        -->
+        </style>
+
+</head>
+<body>
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">タスクリスト</h1>
+            <form class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="検索キーワード">
+                <i class="fas fa-search"></i><!-- font awesome font-->
+            </form>
+        </header>
+
+        <ul class="list-group todos mx-auto text-light">
+
+        </ul>
+
+        <form class="add text-center my-4">
+            <label class="text-light">タスク保存</label>
+            <input type="text" class="form-control m-auto" name="add" placeholder="新しいキーワード">
+        </form>
+        
+<p>あなたはいま</p>
+<p id="loc" class="position"></p>
+<p>の場所にいます。ちなみに精度は半径 <span id="accuracy" class="position"></span> mです。</p>
+</body>
+    </div>
+
+    <script src="app.js"></script>
+
+    
+</html>
